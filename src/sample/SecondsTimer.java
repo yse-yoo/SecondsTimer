@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Timer;
+
 public class SecondsTimer {
 
 	//秒
@@ -9,6 +11,12 @@ public class SecondsTimer {
 
 		System.out.println(seconds + "秒後に実行します");
 
+		//ミリ秒
+		long ms = seconds * 1000;
+		
+		//タイマー作成
+		Timer timer = new Timer();
+		
 	}
 
 }
