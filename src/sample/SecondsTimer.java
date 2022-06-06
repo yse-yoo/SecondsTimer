@@ -25,6 +25,7 @@ public class SecondsTimer {
 			public void run() {
 				System.out.println("実行しました！");
 			}
+
 		};
 			
 		//タイマーのスケジュール
