@@ -1,5 +1,7 @@
 package school;
 
+import java.util.Timer;
+
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -53,5 +55,11 @@ public class Window extends JFrame{
 		if (index >= images.length) {
 			index = 0;
 		}
+	}
+	
+	public void startTimer() {
+		Timer timer = new Timer(true);
+		//0.5秒間隔（interval）
+		timer.schedule(new AnimationTask(this), 0, 500);
 	}
 }
