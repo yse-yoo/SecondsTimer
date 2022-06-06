@@ -1,6 +1,7 @@
 package sample;
 
 import java.util.Timer;
+import java.util.TimerTask;
 
 public class SecondsTimer {
 
@@ -17,6 +18,16 @@ public class SecondsTimer {
 		//タイマー作成
 		Timer timer = new Timer();
 		
+		//タイマーのタスク
+		TimerTask task = new TimerTask() {
+			
+			@Override
+			public void run() {
+				// TODO 自動生成されたメソッド・スタブ
+				
+			}
+		};
+
 	}
 
 }
