@@ -14,6 +14,28 @@ public class Window extends JFrame{
 	public ImageIcon[] images = new ImageIcon[imageCount];
 	//画像の番号
 	public int index = 0;
+	//画像の先頭文字（プリフィックス）
 	final String imagePrefix = "school-";
+	//画像の拡張子（Extention）
 	final String imageExt = ".jpg";
+
+	
+	//画像を配列に入れる
+	public void loadImages() {
+		for (int i = 0; i < images.length; i++) {
+			String path = "./images/" + imagePrefix + (i + 1) + imageExt;
+			images[i] = new ImageIcon(path);
+		}
+	}
+	
+	//フレームの作成
+	public void createWindow() {
+		setBounds(0, 0, 1000, 1000);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		//ラベル生成と追加
+		label = new JLabel();
+		add(label);
+		setVisible(true);
+	}
+	
 }
