@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class Window extends JFrame{
+	
 
 	//画像の表示場所
 	public JLabel label;
@@ -19,6 +20,12 @@ public class Window extends JFrame{
 	//画像の拡張子（Extention）
 	final String imageExt = ".jpg";
 
+	//コンストラクタ
+	public Window() {
+		super();
+		loadImages();
+		createWindow();
+	}
 	
 	//画像を配列に入れる
 	public void loadImages() {
