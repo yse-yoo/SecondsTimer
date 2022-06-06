@@ -12,13 +12,15 @@ public class Window extends JFrame{
 	//画像の表示場所
 	public JLabel label;
 	//画像の枚数
-	public int imageCount = 6;
+//	public int imageCount = 6;
+	public int imageCount = 5;
 	//アイコン画像の配列（Array）
 	public ImageIcon[] images = new ImageIcon[imageCount];
 	//画像の番号
 	public int index = 0;
 	//画像の先頭文字（プリフィックス）
-	final String imagePrefix = "school-";
+//	final String imagePrefix = "school-";
+	final String imagePrefix = "Dance";
 	//画像の拡張子（Extention）
 	final String imageExt = ".jpg";
 
@@ -60,6 +62,6 @@ public class Window extends JFrame{
 	public void startTimer() {
 		Timer timer = new Timer(true);
 		//0.5秒間隔（interval）
-		timer.schedule(new AnimationTask(this), 0, 500);
+		timer.schedule(new AnimationTask(this), 0, 100);
 	}
 }
