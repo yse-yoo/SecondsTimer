@@ -45,4 +45,13 @@ public class Window extends JFrame{
 		setVisible(true);
 	}
 	
+	public void animate() {
+		//ラベルに画像を設定
+		label.setIcon(images[index]);
+		index++;
+		//最後の画像になったら、最初にもどる
+		if (index >= images.length) {
+			index = 0;
+		}
+	}
 }
